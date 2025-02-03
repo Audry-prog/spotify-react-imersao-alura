@@ -87,7 +87,7 @@ Isso abrirá o projeto no seu navegador, geralmente acessando http://localhost:3
 
 ## 📷 Print da Tela do Projeto
 
-![Demonstração do Projeto](public/images/tela_projeto_imersao_alura.png)
+![Demonstração do Projeto](public/tela_projeto_imersao_alura.png)
 
 ## 📜 Licença
 
