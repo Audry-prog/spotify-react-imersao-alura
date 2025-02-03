@@ -5,7 +5,7 @@ import smallArrowLeft from '../../assets/icons/small-left.png';
 import search from '../../assets/icons/search.png';
 
 const Header = ({ onSearchChange }) => {
-    // Função que captura o valor do input e chama o onSearchChange do App.js
+    /* Function that captures the input value and calls App.js' onSearchChange */
     const handleInputChange = (event) => {
         onSearchChange(event.target.value);
     };
@@ -29,7 +29,7 @@ const Header = ({ onSearchChange }) => {
                     autoCapitalize="off" 
                     spellCheck="false"
                     placeholder="O que você quer ouvir?"
-                    onChange={handleInputChange} // Chama a função para passar o valor da pesquisa para o App
+                    onChange={handleInputChange} /* Call the function to pass the search value to the App */
                 />
             </div>
             <div className="header__login">

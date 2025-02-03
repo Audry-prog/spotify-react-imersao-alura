@@ -19,34 +19,35 @@ import Playlist13 from '../../assets/playlist/13.jpeg';
 import Playlist14 from '../../assets/playlist/14.jpeg';
 import Playlist15 from '../../assets/playlist/15.jpeg';
 
-import artistsData from '../../api-artists/artists.json'; // Importando o arquivo JSON com os artistas
+import artistsData from '../../api-artists/artists.json'; /* Importing the JSON file with artists */
 
 const Main = ({ searchTerm }) => {
-    const [filteredArtists, setFilteredArtists] = useState([]); // Estado para armazenar artistas filtrados
-    const [noResults, setNoResults] = useState(false); // Estado para verificar se não há resultados
+    const [filteredArtists, setFilteredArtists] = useState([]); /* State to store filtered artists */
+    const [noResults, setNoResults] = useState(false); 
+    /* State to check if there are no results */
 
     useEffect(() => {
-        // Quando o termo de pesquisa mudar, filtra os artistas
+        /* When the search term changes, filter the artists */
         if (searchTerm === '') {
-            setFilteredArtists([]); // Se o campo estiver vazio, não faz filtro
-            setNoResults(false); // Não mostra a mensagem "Nada foi encontrado"
+            setFilteredArtists([]); /* If the field is empty, do not filter */
+            setNoResults(false); /* Does not show the message "Nothing was found" */
         } else {
             const filtered = artistsData.artists.filter((artist) =>
                 artist.name.toLowerCase().startsWith(searchTerm.toLowerCase())
             );
-            setFilteredArtists(filtered); // Atualiza os artistas filtrados
+            setFilteredArtists(filtered); /* Update filtered artists */
 
             if (filtered.length === 0) {
-                setNoResults(true); // Se não houver resultados, mostra a mensagem de "Nada foi encontrado"
+                setNoResults(true); /* If there are no results, show the message "Nothing was found" */
             } else {
-                setNoResults(false); // Se houver resultados, oculta a mensagem
+                setNoResults(false); /* If there are results, hide the message */
             }
         }
     }, [searchTerm]);
 
     return (
         <div className="playlist-container">
-            {/* Mensagens de boas-vindas ou mensagem de "Nada foi encontrado" */}
+            {/* Welcome messages or "Nothing was found" message */}
             {searchTerm === '' && !noResults && (
                 <div className="playlist">
                     <h1 id="greeting">Boas vindas</h1>
@@ -61,7 +62,7 @@ const Main = ({ searchTerm }) => {
                 </div>
             )}
 
-            {/* Mostrar 15 imagens iniciais quando não houver resultados de busca ou quando a busca estiver vazia */}
+            {/* Show 15 initial images when there are no search results or when the search is empty */}
             <div id="result-playlists" className={noResults || searchTerm === '' ? '' : 'hidden'}>
                 <div className="offer__scroll-container">
                     <div className="offer__list">
@@ -161,7 +162,7 @@ const Main = ({ searchTerm }) => {
                 </div>
             </div>
 
-            {/* Se houverem artistas filtrados, mostre-os */}
+            {/* If there are filtered artists, show them */}
             <div id="result-artist" className={filteredArtists.length === 0 && !noResults ? 'hidden' : ''}>
                 <div className="grid-container">
                     {filteredArtists.map((artist) => (
