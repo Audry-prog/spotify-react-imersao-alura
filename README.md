@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 🎵 Spotify Imersão Alura
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Spotify Imersão Alura**! Este projeto foi desenvolvido durante a imersão promovida pela **Alura** entre os dias 24/01/2025 a 04/02/2025, onde exploramos tecnologias web para criar uma aplicação inspirada no Spotify.
 
-## Available Scripts
+## 📌 Sobre o Projeto
 
-In the project directory, you can run:
+O projeto consiste em uma aplicação web que simula algumas funcionalidades do Spotify, como:
 
-### `npm start`
+- 🔍 Busca de artistas
+- 🎶 Exibição de playlists
+- 🖼️ Exibição de detalhes do artista (imagem, nome, etc.)
+- ⚡ Interface dinâmica com gerenciamento de componentes e estado utilizando React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **REACT** →  → Framework JavaScript para construir interfaces de usuário dinâmicas e componentes reutilizáveis.
+- **CSS**  → Estilização da interface e layout.
+- **JavaScript** → Linguagem utilizada para a lógica do projeto e interação com os componentes.
+- **React Router** → Navegação entre diferentes páginas ou seções da aplicação.
+Context API ou Hooks (useState, useEffect, etc.) → Gerenciamento de estado e lógica de componentes.
 
-### `npm test`
+## 📂 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+spotify-react-imersao-alura/
+│
+├── node_modules/        # Dependências do projeto (instaladas via npm)
+├── public/              # Arquivos públicos (index.html, favicon.ico, etc.)
+├── src/                 # Código-fonte da aplicação
+│   ├── api-artists/     # Contém dados dos artistas (JSON)
+│   │   └── artists.json
+│   ├── assets/          # Arquivos de mídia e ícones
+│   │   ├── icons/       # Ícones utilizados na aplicação
+│   │   └── playlists/   # Imagens dos álbuns dos cantores
+│   ├── components/      # Componentes reutilizáveis da aplicação
+│   │   ├── Footer/      # Componente Footer
+│   │   │   ├── Footer.css
+│   │   │   └── Footer.js
+│   │   ├── Header/      # Componente Header
+│   │   │   ├── Header.css
+│   │   │   └── Header.js
+│   │   ├── Sidebar/     # Componente Sidebar
+│   │   │   ├── Sidebar.css
+│   │   │   └── Sidebar.js
+│   │   └── Main/        # Componente Main
+│   │       ├── Main.css
+│   │       └── Main.js
+│   ├── reset.css        # Reset de estilos padrão
+│   ├── vars.css         # Variáveis CSS
+│   ├── App.css          # Estilos específicos para o App
+│   ├── App.js           # Componente principal da aplicação
+│   ├── index.css        # Estilos globais do projeto
+│   ├── index.js         # Ponto de entrada para a aplicação
+│   ├── reportWebVitals.js  # Arquivo relacionado a métricas de performance
+│   ├── setupTests.js    # Configuração inicial para os testes
+│   ├── App.test.js      # Testes relacionados ao App
+│   └── logo.svg         # Logo da aplicação (ou ícone)
+├── .gitignore           # Arquivos e pastas a serem ignorados pelo git
+├── package-lock.json    # Dependências exatas do projeto
+├── package.json         # Definição das dependências e scripts do projeto
+└── README.md            # Documentação do projeto
+```
 
-### `npm run build`
+## 📡 Como Executar o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/Audry-prog/spotify-react-imersao-alura.git
+   ```
+2. Acesse a pasta do projeto:
+   ```sh
+   cd spotify-react-imersao-alura
+   ```
+3. Instale as dependências do projeto utilizando o npm (ou yarn, se preferir):
+   ```sh
+   npm install
+   ```
+4. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm start
+   ```
+Isso abrirá o projeto no seu navegador, geralmente acessando http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📢 Funcionalidades
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✔️ Busca artistas por nome ✔️ Filtra artistas na API fake ✔️ Exibe informações detalhadas do artista ✔️ Alterna entre lista de artistas e detalhes ✔️ Estilização dinâmica baseada na interação do usuário
 
-### `npm run eject`
+## 📷 Print da Tela do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Demonstração do Projeto](public/images/tela_projeto_imersao_alura.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📜 Licença
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Este projeto foi desenvolvido para fins educacionais durante a imersão da Alura. Sinta-se à vontade para explorar. 🎵🚀
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+💡 **Dúvidas ou sugestões?** Contribua com o projeto ou entre em contato! 😃
