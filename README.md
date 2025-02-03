@@ -21,7 +21,7 @@ Context API ou Hooks (useState, useEffect, etc.) → Gerenciamento de estado e l
 
 ## 📂 Estrutura do Projeto
 
-```
+````
 spotify-react-imersao-alura/
 │
 ├── node_modules/        # Dependências do projeto (instaladas via npm)
@@ -45,8 +45,9 @@ spotify-react-imersao-alura/
 │   │   └── Main/        # Componente Main
 │   │       ├── Main.css
 │   │       └── Main.js
-│   ├── reset.css        # Reset de estilos padrão
-│   ├── vars.css         # Variáveis CSS
+│   ├── styles/          # Estilos globais e variáveis CSS
+│   │   ├── vars.css     # Variáveis CSS
+│   │   └── reset.css    # Reset de estilos padrão
 │   ├── App.css          # Estilos específicos para o App
 │   ├── App.js           # Componente principal da aplicação
 │   ├── index.css        # Estilos globais do projeto
@@ -59,7 +60,7 @@ spotify-react-imersao-alura/
 ├── package-lock.json    # Dependências exatas do projeto
 ├── package.json         # Definição das dependências e scripts do projeto
 └── README.md            # Documentação do projeto
-```
+````
 
 ## 📡 Como Executar o Projeto
 

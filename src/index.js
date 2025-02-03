@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './vars.css';   // Import the CSS variables globally
-import './reset.css';  // Import the CSS reset globally
+import './styles/vars.css';   // Import the CSS variables globally
+import './styles/reset.css';  // Import the CSS reset globally
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
