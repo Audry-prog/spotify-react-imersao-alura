@@ -57,7 +57,7 @@ const Main = ({ searchTerm }) => {
 
             {noResults && (
                 <div className="playlist">
-                    <h1 id="greeting">Nada foi encontrado</h1>
+                    <h1 id="greeting">"Nada foi encontrado!"</h1>
                     <h2 className="session">Tente novamente com outra letra.</h2>
                 </div>
             )}
