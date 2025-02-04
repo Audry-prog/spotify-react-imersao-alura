@@ -6,10 +6,10 @@ import Main from './components/Main/Main';
 import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
-    // Estado para armazenar o termo de busca
+    /* State that will store the search term */
     const [searchTerm, setSearchTerm] = useState('');
 
-    // Função que será chamada para atualizar o termo de pesquisa
+    /* Function that will be called to update the search term */
     const handleSearchChange = (searchTerm) => {
         setSearchTerm(searchTerm);
     };
