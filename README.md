@@ -13,7 +13,7 @@ O projeto consiste em uma aplicação web que simula algumas funcionalidades do 
 
 ## 🚀 Tecnologias Utilizadas
 
-- **REACT** →  → Framework JavaScript para construir interfaces de usuário dinâmicas e componentes reutilizáveis.
+- **REACT** → Framework JavaScript para construir interfaces de usuário dinâmicas e componentes reutilizáveis.
 - **CSS**  → Estilização da interface e layout.
 - **JavaScript** → Linguagem utilizada para a lógica do projeto e interação com os componentes.
 - **React Router** → Navegação entre diferentes páginas ou seções da aplicação.
